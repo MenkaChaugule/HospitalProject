@@ -1,0 +1,22 @@
+
+<h4>Search patient</h4><br><br>
+Enter Patient Name:-<input type="text" [(ngModel)]="patientName" placeholder="Name" id=""><br><br>
+<input type="button" value="Search" (click)="Search()" class="btn">
+<br><br>
+<table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            <tr *ngFor="let pat of patientModels">
+                <td>{{pat.name}}</td>
+                <td>{{pat.problemDescription}}</td>
+            </tr>
+            <!--@foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.name</td>
+                    <td>@item.problemDescription</td>
+                </tr>
+            }-->
+        </table>
