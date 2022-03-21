@@ -22,5 +22,7 @@ namespace HospitalApp
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+//code changes for testing
     }
 }
