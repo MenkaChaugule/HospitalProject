@@ -27,6 +27,6 @@ export class LoginComponent {
     this.router.navigate(['/Home']);
   }
   Error(res){
-
+	//show error here --nbb
   }
 }
